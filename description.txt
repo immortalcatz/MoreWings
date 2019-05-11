@@ -1,0 +1,20 @@
+
+This mod is still very WIP and will probaly be updated alot
+currently contains:
+- 3 sets of prehardmode wings
+- 1 crafing material
+- 1 Pet
+
+v0.5.4
+- Resprited the Crimtane soul and Ebonian Soul
+- Removed Skeletal Wings
+- Added Meteorite Booster (Sprite W.I.P.)
+v.0.5.5
+- Resprited the Meteorite Booster 
+- Rebalanced all wings
+v.0.5.6
+- Added a little easter egg
+v.0.5.7
+- Rebalanced pretty much all selling prices
+- Resprited Ebononian soul and Crimtane Soul again
+
