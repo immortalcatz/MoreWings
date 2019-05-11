@@ -10,12 +10,12 @@ namespace MoreWings.Items
 		public override void SetStaticDefaults()
 		{
             DisplayName.SetDefault("Demonic Waders");
-            Tooltip.SetDefault("Flight time: 75" + "\nAcceleration: 1.4" + "\nAllows you to run" + "\nCounts as wings" + "\nGives you great mobility on ice");     
+            Tooltip.SetDefault("Flight time: 90" + "\nAcceleration: 1.5" + "\nAllows you to run" + "\nCounts as wings" + "\nGives you great mobility on ice");     
 		}
 
 		public override void SetDefaults()
 		{
-			item.width = 22;
+			item.width = 38;
 			item.height = 20;
             item.value = Item.sellPrice(0, 30, 50, 0);
             item.rare = 5;
@@ -24,7 +24,7 @@ namespace MoreWings.Items
 
 		public override void UpdateAccessory(Player player, bool hideVisual)
 		{
-			player.wingTimeMax = 75;
+			player.wingTimeMax = 90;
             player.accRunSpeed = 6.25f;
             player.iceSkate = true;
             player.moveSpeed += 07;
@@ -35,15 +35,15 @@ namespace MoreWings.Items
 		{
 			ascentWhenFalling = 0.86f;
 			ascentWhenRising = 0.15f;
-			maxCanAscendMultiplier = 1f;
-			maxAscentMultiplier = 1.7f;
+			maxCanAscendMultiplier = 1.2f;
+			maxAscentMultiplier = 2f;
 			constantAscend = 0.135f;
 		}
 
 		public override void HorizontalWingSpeeds(Player player, ref float speed, ref float acceleration)
 		{
 			speed = 5f;
-			acceleration *= 1.4f;
+			acceleration *= 1.5f;
 		}
 
 		public override void AddRecipes()
