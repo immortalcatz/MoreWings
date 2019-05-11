@@ -9,7 +9,7 @@ namespace MoreWings.Items
 	{
 		public override void SetStaticDefaults()
 		{
-            Tooltip.SetDefault("Flight time: 55" + "\nAcceleration: 1.2");
+            Tooltip.SetDefault("Flight time: 55" + "\nHorizontal speed: 6" + "\nAcceleration: 1");
                 
 		}
 
@@ -39,8 +39,8 @@ namespace MoreWings.Items
 
 		public override void HorizontalWingSpeeds(Player player, ref float speed, ref float acceleration)
 		{
-			speed = 5f;
-			acceleration *= 1.2f;
+			speed = 6f;
+			acceleration *= 1f;
 		}
 
 		public override void AddRecipes()

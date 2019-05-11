@@ -12,7 +12,7 @@ namespace MoreWings.Items
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Ebonian Soul");
-            Tooltip.SetDefault("Flight time: 40" + "\nAcceleration: 1" + "\n It's radiating with the power of the corruption");
+            Tooltip.SetDefault("Flight time: 40" + "\nHorizontal speed: 5" + "\nAcceleration: 1" + "\n It's radiating with the power of the corruption");
             Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(5, 4));
             ItemID.Sets.AnimatesAsSoul[item.type] = true;
             ItemID.Sets.ItemNoGravity[item.type] = true;
@@ -46,7 +46,7 @@ namespace MoreWings.Items
         public override void HorizontalWingSpeeds(Player player, ref float speed, ref float acceleration)
         {
             speed = 5f;
-            acceleration *= 1f;
+            acceleration *= 0.8f;
         }
 
         public override void AddRecipes()
