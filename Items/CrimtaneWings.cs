@@ -45,7 +45,7 @@ namespace MoreWings.Items
             ascentWhenRising = 0.15f;
             maxCanAscendMultiplier = 1f;
             maxAscentMultiplier = 1.5f;
-            constantAscend = 0.135f;
+            constantAscend = 0.1f;
         }
 
         public override void HorizontalWingSpeeds(Player player, ref float speed, ref float acceleration)
