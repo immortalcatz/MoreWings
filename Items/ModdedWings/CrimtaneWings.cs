@@ -4,7 +4,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace MoreWings.Items
+namespace MoreWings.Items.ModdedWings
 {
     [AutoloadEquip(EquipType.Wings)]
     public class CrimtaneWings : ModItem

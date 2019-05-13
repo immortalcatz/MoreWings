@@ -21,4 +21,6 @@ v.0.5.7
 v.0.5.8
 - Resprited Demonic Waders (Still W.I.P)
 - Rebalanced Demonic Waders
+v.0.5.9
+- Added tooltips to all vanilla wings
 

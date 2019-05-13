@@ -2,27 +2,28 @@ using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
 
-namespace MoreWings.Items
+namespace MoreWings.Items.ModdedWings
 {
     [AutoloadEquip(EquipType.Wings)]
-    public class DirtWings : ModItem
+    public class OpWings : ModItem
     {
         public override void SetStaticDefaults()
         {
-            Tooltip.SetDefault("Flight time: 25" + "\nHorizontal speed: 4" + "\nAcceleration: 0.6"); 
+            DisplayName.SetDefault("Endless Wings");
+            Tooltip.SetDefault("Flight time: infinite" + "\nHorizontal speed: 10" + "\nAcceleration: 5");
         }
         public override void SetDefaults()
         {
             item.width = 22;
             item.height = 20;
-            item.value = Item.sellPrice(0, 0, 1, 50);
-            item.rare = 1;
+            item.value = Item.sellPrice(0, 0, 0, 1);
+            item.rare = -12;
             item.accessory = true;
         }
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.wingTimeMax = 25;
+            player.wingTimeMax = 9999999;
         }
 
         public override void VerticalWingSpeeds(Player player, ref float ascentWhenFalling, ref float ascentWhenRising,
@@ -30,25 +31,14 @@ namespace MoreWings.Items
         {
             ascentWhenFalling = 0.25f;
             ascentWhenRising = 0.15f;
-            maxCanAscendMultiplier = 1f;
-            maxAscentMultiplier = 1.2f;
-            constantAscend = 0.08f;
+            maxCanAscendMultiplier = 5f;
+            maxAscentMultiplier = 5f;
+            constantAscend = 0.135f;
         }
         public override void HorizontalWingSpeeds(Player player, ref float speed, ref float acceleration)
         {
-            speed = 4f;
-            acceleration *= 0.6f;
-        }
-
-        public override void AddRecipes()
-        {
-            ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.DirtBlock, 100);
-            recipe.AddIngredient(ItemID.Feather, 5);
-            recipe.AddIngredient(mod.ItemType("ConcentratedGel"), 1);
-            recipe.AddTile(305);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
+            speed = 10f;
+            acceleration *= 5f;
         }
     }
 }

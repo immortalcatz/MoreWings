@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
 
-namespace MoreWings.Items
+namespace MoreWings.Items.ModdedWings
 {
 	[AutoloadEquip(EquipType.Wings)]
 	public class MeteoriteBooster : ModItem
