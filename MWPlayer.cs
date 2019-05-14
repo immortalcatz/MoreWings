@@ -15,13 +15,6 @@ namespace MoreWings
 	public class MWPlayer : ModPlayer
 	{
 		public bool Pear = false;
-
-        public override void SetupStartInventory(IList<Item> items)
-        {
-            Item item = new Item();
-            item.SetDefaults(mod.ItemType("Pear"));
-            item.stack = 1;
-            items.Add(item);
-        }
+        public bool Devil = false;
     }
 }

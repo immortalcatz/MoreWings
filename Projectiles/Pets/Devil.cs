@@ -6,21 +6,19 @@ using Terraria.ModLoader;
 
 namespace MoreWings.Projectiles.Pets
 {
-	public class Pear : ModProjectile
+	public class Devil : ModProjectile
 	{
 		public override void SetStaticDefaults()
 		{
-			Main.projFrames[projectile.type] = 1;
+			Main.projFrames[projectile.type] = 5;
 			Main.projPet[projectile.type] = true;
-            ProjectileID.Sets.TrailingMode[projectile.type] = 2;
-            ProjectileID.Sets.LightPet[projectile.type] = true;
         }
 
 		public override void SetDefaults()
 		{
-			projectile.CloneDefaults(492);
-			aiType = 492;
-        }
+			projectile.CloneDefaults(ProjectileID.ZephyrFish);
+			aiType = ProjectileID.ZephyrFish;
+		}
 
 		public override bool PreAI()
 		{
@@ -38,9 +36,9 @@ namespace MoreWings.Projectiles.Pets
 			MWPlayer modPlayer = player.GetModPlayer<MWPlayer>(mod);
 			if (player.dead)
 			{
-				modPlayer.Pear = false;
+				modPlayer.Devil = false;
 			}
-			if (modPlayer.Pear)
+			if (modPlayer.Devil)
 			{
 				projectile.timeLeft = 2;
 			}

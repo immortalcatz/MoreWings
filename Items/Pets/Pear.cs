@@ -32,6 +32,7 @@ namespace MoreWings.Items.Pets
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemID.Mushroom, 10);
+            recipe.AddIngredient(3002, 20);
             recipe.AddTile(TileID.LivingLoom);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
