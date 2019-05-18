@@ -12,9 +12,15 @@ using Terraria.GameInput;
 
 namespace MoreWings
 {
-	public class MWPlayer : ModPlayer
-	{
-		public bool Pear = false;
-        public bool Devil = false;
+    public class MWPlayer : ModPlayer
+    {
+        public bool pear = false;
+        public bool redDevil = false;
+
+        public override void ResetEffects()
+        {
+            redDevil = false;
+            pear = false;
+        }
     }
 }

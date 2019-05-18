@@ -23,4 +23,6 @@ v.0.5.8
 - Rebalanced Demonic Waders
 v.0.5.9
 - Added tooltips to all vanilla wings
+v0.6
+- Added the Chunk of Flesh
 

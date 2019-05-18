@@ -12,32 +12,26 @@ namespace MoreWings.Items.ModdedWings
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Crimtane Soul");
-            Tooltip.SetDefault("Flight time: 40" + "\nHorizontal speed: 5" + "\nAcceleration: 0.8" + "\n It's radiating with the power of the crimson");
+            Tooltip.SetDefault("Flight time: 40\nHorizontal speed: 5\nAcceleration: 0.8\n It's radiating with the power of the crimson");
             Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(5, 4));
             ItemID.Sets.AnimatesAsSoul[item.type] = true;
-            ItemID.Sets.ItemNoGravity[item.type] = true;
+            ItemID.Sets.ItemNoGravity[item.type] = true;  
         }
 
         public override void SetDefaults()
         {
             item.width = 22;
-            item.height = 20;
+            item.height = 22;
             item.value = Item.sellPrice(0, 3, 40, 0);
             item.rare = 2;
             item.accessory = true;
         }
-        public override void UpdateVanity(Player player, EquipType type)
-       {
-           if (player.wingFrame != 0)
-           {
-                Dust.NewDust(player.position, player.width, player.height, 50, 0f, 0f, 150, default(Color), 1f);
-            }
-        }
-         public override void UpdateAccessory(Player player, bool hideVisual)
+        public override void UpdateAccessory(Player player, bool hideVisual)
         {
             player.wingTimeMax = 40;
+            if (player.velocity.Y < player.oldVelocity.Y && player.wingFrame != 0 && Main.rand.Next(3) == 0)
+                Dust.NewDust(player.position, player.width, player.height, mod.DustType("Blood"));
         }
-
         public override void VerticalWingSpeeds(Player player, ref float ascentWhenFalling, ref float ascentWhenRising,
             ref float maxCanAscendMultiplier, ref float maxAscentMultiplier, ref float constantAscend)
         {

@@ -9,7 +9,7 @@ namespace MoreWings.Items.Pets
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Pear");
-			Tooltip.SetDefault("Just a little pear that floats around...");
+			Tooltip.SetDefault("Summons a Pear that follows you around and exposes nearby treasure");
 		}
 
 		public override void SetDefaults()

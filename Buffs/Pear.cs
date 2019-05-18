@@ -16,7 +16,7 @@ namespace MoreWings.Buffs
 
 		public override void Update(Player player, ref int buffIndex)
 		{
-			player.GetModPlayer<MWPlayer>(mod).Pear = true;
+			player.GetModPlayer<MWPlayer>(mod).pear = true;
 			player.buffTime[buffIndex] = 18000;
 			bool petProjectileNotSpawned = player.ownedProjectileCounts[mod.ProjectileType("Pear")] <= 0;
 			if (petProjectileNotSpawned && player.whoAmI == Main.myPlayer)

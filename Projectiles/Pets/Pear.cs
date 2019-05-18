@@ -36,11 +36,16 @@ namespace MoreWings.Projectiles.Pets
 		{
 			Player player = Main.player[projectile.owner];
 			MWPlayer modPlayer = player.GetModPlayer<MWPlayer>(mod);
-			if (player.dead)
+            if (!player.active)
+            {
+                projectile.active = false;
+                return;
+            }
+            if (player.dead)
 			{
-				modPlayer.Pear = false;
+				modPlayer.pear = false;
 			}
-			if (modPlayer.Pear)
+			if (modPlayer.pear)
 			{
 				projectile.timeLeft = 2;
 			}

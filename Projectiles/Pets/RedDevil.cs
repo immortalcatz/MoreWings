@@ -6,7 +6,7 @@ using Terraria.ModLoader;
 
 namespace MoreWings.Projectiles.Pets
 {
-	public class Devil : ModProjectile
+	public class RedDevil : ModProjectile
 	{
 		public override void SetStaticDefaults()
 		{
@@ -34,14 +34,6 @@ namespace MoreWings.Projectiles.Pets
 		{
 			Player player = Main.player[projectile.owner];
 			MWPlayer modPlayer = player.GetModPlayer<MWPlayer>(mod);
-			if (player.dead)
-			{
-				modPlayer.Devil = false;
-			}
-			if (modPlayer.Devil)
-			{
-				projectile.timeLeft = 2;
-			}
             if (Vector2.Distance(player.Center, projectile.Center) > rangeHypoteneus)
             {
                 projectile.Center = new Vector2(Main.rand.Next((int)player.Center.X - range, (int)player.Center.X + range), Main.rand.Next((int)player.Center.Y - range, (int)player.Center.Y + range));
@@ -49,6 +41,20 @@ namespace MoreWings.Projectiles.Pets
                 Vector2 vectorToPlayer = player.Center - projectile.Center;
                 projectile.velocity += 2f * Vector2.Normalize(vectorToPlayer);
             }
+            if (!player.active)
+            {
+                projectile.active = false;
+                return;
+            }
+            if (player.dead)
+			{
+				modPlayer.redDevil = false;
+			}
+			if (modPlayer.redDevil)
+			{
+				projectile.timeLeft = 2;
+			}
+            
         }
 	}
 }
