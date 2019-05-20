@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.DataStructures;
@@ -12,26 +11,28 @@ namespace MoreWings.Items.Pets
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Chunk of Flesh");
-			Tooltip.SetDefault("Summons a Red Devil to follow behind you");
+			Tooltip.SetDefault("Summons a Red Devil to follow you around");
             Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(7, 24));
         }
+
 		public override void SetDefaults()
 		{
-			item.CloneDefaults(ItemID.ZephyrFish);
-			item.shoot = mod.ProjectileType("RedDevil");
+            Item refItem = new Item();
+            refItem.SetDefaults(ItemID.ZephyrFish);
+            item.shoot = mod.ProjectileType("RedDevil");
 			item.buffType = mod.BuffType("RedDevil");
+            item.rare = 4;
             item.value = Item.sellPrice(0, 2, 50, 0);
-            item.width = 20;
-            item.height = 26;
         }
+
         class MyGlobalNPC : GlobalNPC
         {
             public override void NPCLoot(NPC npc)
             {
-                if (npc.type == NPCID.WallofFlesh && !Main.expertMode)
+                if (npc.type == NPCID.WallofFlesh)
                 {
-                    if (Main.rand.NextFloat() < .10f)
-                        Item.NewItem(npc.getRect(), mod.ItemType("RedDevil"));
+                    if (Main.rand.NextFloat() < .25f && !Main.expertMode)
+                        Item.NewItem(npc.getRect(), mod.ItemType("Chunk of Flesh"), 1);
                 }
             }
         }

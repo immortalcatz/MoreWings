@@ -1,4 +1,3 @@
-
 This mod is still very WIP and will probaly be updated alot
 currently contains:
 - 3 sets of prehardmode wings
@@ -25,4 +24,8 @@ v.0.5.9
 - Added tooltips to all vanilla wings
 v0.6
 - Added the Chunk of Flesh
+v0.6.1
+- Lots of bug fixes
+v0.6.1.1
+- very small changes and some bug fixes
 

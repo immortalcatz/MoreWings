@@ -26,7 +26,7 @@ namespace MoreWings.Items.Pets
 			item.noMelee = true;
 			item.value = Item.sellPrice(0, 0, 25, 0);
 			item.buffType = mod.BuffType("Pear");
-		}
+        }
 
 		public override void AddRecipes()
 		{

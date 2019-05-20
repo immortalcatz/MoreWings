@@ -10,7 +10,7 @@ namespace MoreWings.Items
         {
             if (Main.rand.NextFloat() < .25f && arg == ItemID.WallOfFleshBossBag && context == "bossBag")
             {
-                player.QuickSpawnItem(mod.ItemType("Devil"));
+                player.QuickSpawnItem(mod.ItemType("RedDevil"));
             }
         }
     }
