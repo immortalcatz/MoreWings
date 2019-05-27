@@ -10,21 +10,21 @@ namespace MoreWings.Items.ModdedWings
 		public override void SetStaticDefaults()
 		{
             DisplayName.SetDefault("Demonic Waders");
-            Tooltip.SetDefault("Flight time: 90" + "\nHorizontal speed: 8" + "\nAcceleration: 1.2" + "\nAllows you to run" + "\nCounts as wings" + "\nGives you great mobility on ice");     
+            Tooltip.SetDefault("Counts as wings\nFlight time: 100\nHorizontal speed: 8\nAcceleration: 1.2\nAllows flight, super fast running and extra mobility on ice");     
 		}
 
 		public override void SetDefaults()
 		{
-			item.width = 38;
-			item.height = 20;
+			item.width = 10;
+			item.height = 10;
             item.value = Item.sellPrice(0, 30, 50, 0);
-            item.rare = 5;
+            item.rare = 6;
 			item.accessory = true;
 		}	
 
 		public override void UpdateAccessory(Player player, bool hideVisual)
 		{
-			player.wingTimeMax = 90;
+			player.wingTimeMax = 130;
             player.accRunSpeed = 6.25f;
             player.iceSkate = true;
             player.moveSpeed += 07;
@@ -34,7 +34,7 @@ namespace MoreWings.Items.ModdedWings
 			ref float maxCanAscendMultiplier, ref float maxAscentMultiplier, ref float constantAscend)
 		{
 			ascentWhenFalling = 0.86f;
-			ascentWhenRising = 0.15f;
+			ascentWhenRising = 0.2f;
 			maxCanAscendMultiplier = 1.2f;
 			maxAscentMultiplier = 2f;
 			constantAscend = 0.135f;
@@ -51,11 +51,10 @@ namespace MoreWings.Items.ModdedWings
 			ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.FrostsparkBoots, 1);
             recipe.AddIngredient(492, 1);
-            recipe.AddIngredient(ItemID.SoulofFright, 5);
-            recipe.AddIngredient(ItemID.SoulofSight, 5);
-            recipe.AddIngredient(ItemID.SoulofMight, 5);
-            recipe.AddIngredient(ItemID.HallowedBar, 10);
-            recipe.AddTile(305);
+            recipe.AddIngredient(ItemID.CursedFlame, 5);
+            recipe.AddIngredient(521, 10);
+            recipe.AddIngredient(1508, 10);
+            recipe.AddTile(134);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}
