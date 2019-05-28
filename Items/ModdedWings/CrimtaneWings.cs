@@ -12,7 +12,7 @@ namespace MoreWings.Items.ModdedWings
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Crimtane Soul");
-            Tooltip.SetDefault("Flight time: 40\nHorizontal speed: 5\nAcceleration: 0.8\n It's radiating with the power of the crimson");
+            Tooltip.SetDefault("Flight time: 40\nHorizontal speed: 5\nAcceleration: 0.8\nMay confuse nearby enemies after being struck\nIt's radiating with the power of the crimson\nExper");
             Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(5, 4));
             ItemID.Sets.AnimatesAsSoul[item.type] = true;
             ItemID.Sets.ItemNoGravity[item.type] = true;  
@@ -23,7 +23,7 @@ namespace MoreWings.Items.ModdedWings
             item.width = 22;
             item.height = 22;
             item.value = Item.sellPrice(0, 3, 40, 0);
-            item.rare = 2;
+            item.rare = -12;
             item.accessory = true;
         }
         public override void UpdateAccessory(Player player, bool hideVisual)
@@ -31,6 +31,7 @@ namespace MoreWings.Items.ModdedWings
             player.wingTimeMax = 40;
             if (player.velocity.Y < player.oldVelocity.Y && player.wingFrame != 0 && Main.rand.Next(3) == 0)
                 Dust.NewDust(player.position, player.width, player.height, mod.DustType("Blood"));
+            player.brainOfConfusion = true;
         }
         public override void VerticalWingSpeeds(Player player, ref float ascentWhenFalling, ref float ascentWhenRising,
             ref float maxCanAscendMultiplier, ref float maxAscentMultiplier, ref float constantAscend)
@@ -54,6 +55,7 @@ namespace MoreWings.Items.ModdedWings
             recipe.AddIngredient(ItemID.TissueSample, 20);
             recipe.AddIngredient(ItemID.Feather, 7);
             recipe.AddIngredient(ItemID.CrimtaneBar, 10);
+            recipe.AddIngredient(3223, 1);
             recipe.AddIngredient(mod.ItemType("ConcentratedGel"), 1);
             recipe.AddTile(305);
             recipe.SetResult(this);
