@@ -9,8 +9,7 @@ namespace MoreWings.Items.ModdedWings
 	{
 		public override void SetStaticDefaults()
 		{
-            Tooltip.SetDefault("Flight time: 55" + "\nHorizontal speed: 6" + "\nAcceleration: 1");
-                
+            Tooltip.SetDefault("Flight time: 45\nHorizontal speed: 6\nAcceleration: 1"); 
 		}
 
 		public override void SetDefaults()
@@ -24,7 +23,7 @@ namespace MoreWings.Items.ModdedWings
 
 		public override void UpdateAccessory(Player player, bool hideVisual)
 		{
-			player.wingTimeMax = 55;
+			player.wingTimeMax = 45;
         }
 
 		public override void VerticalWingSpeeds(Player player, ref float ascentWhenFalling, ref float ascentWhenRising,
@@ -46,8 +45,8 @@ namespace MoreWings.Items.ModdedWings
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.Bone, 60);
             recipe.AddIngredient(ItemID.MeteoriteBar, 20);
+            recipe.AddIngredient(ItemID.Bone, 60);            
             recipe.AddIngredient(ItemID.Feather, 10);
             recipe.AddIngredient(mod.ItemType("ConcentratedGel"), 2);
             recipe.AddTile(305);

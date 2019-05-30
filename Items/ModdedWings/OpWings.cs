@@ -9,21 +9,21 @@ namespace MoreWings.Items.ModdedWings
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Endless Wings");
-            Tooltip.SetDefault("Flight time: infinite" + "\nHorizontal speed: 10" + "\nAcceleration: 5");
+            DisplayName.SetDefault("Heavenly Wings");
+            Tooltip.SetDefault("Flight time: Infinite" + "\nHorizontal speed: 10" + "\nAcceleration: 5");
         }
         public override void SetDefaults()
         {
             item.width = 22;
             item.height = 20;
-            item.value = Item.sellPrice(0, 0, 0, 1);
-            item.rare = -12;
+            item.value = Item.sellPrice(1, 0, 0, 0);
+            item.rare = 11;
             item.accessory = true;
         }
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.wingTimeMax = 9999999;
+            player.wingTimeMax = 99999999;
         }
 
         public override void VerticalWingSpeeds(Player player, ref float ascentWhenFalling, ref float ascentWhenRising,

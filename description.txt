@@ -1,9 +1,9 @@
 This mod is still very WIP and will probaly be updated alot
 currently contains:
-- 3 sets of prehardmode wings
+- 4 sets of prehardmode wings
 - 1 set of hardmode wings
 - 1 crafing material
-- 1 Pet
+- 2 Pet
 
 v0.5.4
 - Resprited the Crimtane soul and Ebonian Soul
@@ -30,4 +30,6 @@ v0.6.1.1
 - very small changes and some bug fixes
 v0.6.2
 - Rebalanced and resprited demonic waders
+v0.6.3
+- Added somethings to Crimtane & Ebonian souls
 

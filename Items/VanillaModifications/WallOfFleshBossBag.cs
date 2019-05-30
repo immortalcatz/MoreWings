@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace MoreWings.Items
+namespace MoreWings.Items.VanillaModifications
 {
     public class WallOfFleshBossBag : GlobalItem
     {

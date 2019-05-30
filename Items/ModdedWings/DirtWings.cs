@@ -22,7 +22,7 @@ namespace MoreWings.Items.ModdedWings
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.wingTimeMax = 25;
+            player.wingTimeMax = 20;
         }
 
         public override void VerticalWingSpeeds(Player player, ref float ascentWhenFalling, ref float ascentWhenRising,

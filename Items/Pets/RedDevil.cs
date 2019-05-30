@@ -24,7 +24,10 @@ namespace MoreWings.Items.Pets
             item.rare = 4;
             item.value = Item.sellPrice(0, 2, 50, 0);
         }
-
+        public override void UpdateAccessory(Player player, bool hideVisual)
+        {
+            player.killGuide = true;
+        }
         class MyGlobalNPC : GlobalNPC
         {
             public override void NPCLoot(NPC npc)

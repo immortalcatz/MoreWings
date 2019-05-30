@@ -7,12 +7,12 @@ using Terraria.ModLoader;
 namespace MoreWings.Items.ModdedWings
 {
     [AutoloadEquip(EquipType.Wings)]
-    public class CrimtaneWings : ModItem
+    public class LifeWings : ModItem
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Crimtane Soul");
-            Tooltip.SetDefault("Flight time: 34\nHorizontal speed: 5\nAcceleration: 1\nMay confuse nearby enemies after being struck\nIt's radiating with the power of the crimson\nExpert");
+            DisplayName.SetDefault("Wings of Life");
+            Tooltip.SetDefault("Flight time: 160\nHorizontal speed: 6.5\nAcceleration: 1.75\nIncreases max life by 20\nIncreases life regeneration by 2");
             Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(5, 4));
             ItemID.Sets.AnimatesAsSoul[item.type] = true;
             ItemID.Sets.ItemNoGravity[item.type] = true;  
@@ -23,15 +23,12 @@ namespace MoreWings.Items.ModdedWings
             item.width = 22;
             item.height = 22;
             item.value = Item.sellPrice(0, 3, 40, 0);
-            item.rare = -12;
+            item.rare = 7;
             item.accessory = true;
         }
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.wingTimeMax = 34;
-            if (player.velocity.Y < player.oldVelocity.Y && player.wingFrame != 0 && Main.rand.Next(3) == 0)
-                Dust.NewDust(player.position, player.width, player.height, mod.DustType("Blood"));
-            player.brainOfConfusion = true;
+            player.wingTimeMax = 160;
         }
         public override void VerticalWingSpeeds(Player player, ref float ascentWhenFalling, ref float ascentWhenRising,
             ref float maxCanAscendMultiplier, ref float maxAscentMultiplier, ref float constantAscend)
@@ -45,19 +42,18 @@ namespace MoreWings.Items.ModdedWings
 
         public override void HorizontalWingSpeeds(Player player, ref float speed, ref float acceleration)
         {
-            speed = 5f;
-            acceleration *= 1f;
+            speed = 6.5f;
+            acceleration *= 1.75f;
         }
 
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.CrimtaneBar, 10);
-            recipe.AddIngredient(ItemID.TissueSample, 20);
-            recipe.AddIngredient(ItemID.Feather, 7);
-            recipe.AddIngredient(mod.ItemType("ConcentratedGel"), 1);
-            recipe.AddIngredient(3223, 1);
-            recipe.AddTile(305);
+            recipe.AddIngredient(ItemID.LifeCrystal, 2);
+            recipe.AddIngredient(ItemID.LifeFruit, 5);
+            recipe.AddIngredient(ItemID.SoulofFlight, 20);
+            recipe.AddIngredient(ItemID.Feather, 8);
+            recipe.AddTile(134);
             recipe.SetResult(this);
             recipe.AddRecipe();
         }
