@@ -26,6 +26,7 @@ namespace MoreWings.Items.Tiles
             item.createTile = mod.TileType("PinkBar");
             item.placeStyle = 0;
             item.rare = 5;
+            item.value = Item.sellPrice(0, 0, 60, 0);
         }
 
         public override void AddRecipes()

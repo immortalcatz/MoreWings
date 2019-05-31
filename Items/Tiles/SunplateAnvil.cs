@@ -24,13 +24,15 @@ namespace MoreWings.Items.Tiles
 			item.value = 150;
 			item.createTile = mod.TileType("SunplateAnvil");
             item.rare = 2;
-		}
+            item.value = Item.sellPrice(0, 0, 50, 0);
+        }
 
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(824, 20);
-			recipe.AddIngredient(null, "ZincBar", 15);
+            recipe.AddIngredient(itemID.Feather, 5);
+            recipe.AddIngredient(null, "ZincBar", 15);
             recipe.AddTile(TileID.WorkBenches);
             recipe.SetResult(this);
 			recipe.AddRecipe();
