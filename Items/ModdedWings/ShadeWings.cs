@@ -59,7 +59,7 @@ namespace MoreWings.Items.ModdedWings
             recipe.AddIngredient(ItemID.ShadowScale, 20);
             recipe.AddIngredient(ItemID.Feather, 7);
             recipe.AddIngredient(mod.ItemType("ConcentratedGel"), 1);
-            recipe.AddIngredient(3224, 1);
+            recipe.AddTile(null, "SunplateAnvil");
             recipe.AddTile(305);
             recipe.SetResult(this);
             recipe.AddRecipe();
