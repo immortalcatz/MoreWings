@@ -11,7 +11,7 @@ namespace MoreWings.Items.ModdedWings
     {
         public override void SetStaticDefaults()
         {
-            Tooltip.SetDefault("Flight time: 25" + "\nHorizontal speed: 4" + "\nAcceleration: 0.6"); 
+            Tooltip.SetDefault("Flight time: 25" + "\nHorizontal speed: 4" + "\nAcceleration: 0.6\nVery bad vertical speed"); 
         }
         public override void SetDefaults()
         {
@@ -35,8 +35,8 @@ namespace MoreWings.Items.ModdedWings
             ascentWhenFalling = 0.25f;
             ascentWhenRising = 0.15f;
             maxCanAscendMultiplier = 1f;
-            maxAscentMultiplier = 1.2f;
-            constantAscend = 0.08f;
+            maxAscentMultiplier = 1f;
+            constantAscend = 0.06f;
         }
         public override void HorizontalWingSpeeds(Player player, ref float speed, ref float acceleration)
         {

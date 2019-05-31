@@ -12,7 +12,7 @@ namespace MoreWings.Items.ModdedWings
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Crimtane Soul");
-            Tooltip.SetDefault("Flight time: 34\nHorizontal speed: 5\nAcceleration: 1\nMay confuse nearby enemies after being struck\nIt's radiating with the power of the crimson\nExpert");
+            Tooltip.SetDefault("Flight time: 34\nHorizontal speed: 5\nAcceleration: 1\nBad vertical speed\nMay confuse nearby enemies after being struck\nIt's radiating with the power of the crimson");
             Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(5, 4));
             ItemID.Sets.AnimatesAsSoul[item.type] = true;
             ItemID.Sets.ItemNoGravity[item.type] = true;  
@@ -23,7 +23,7 @@ namespace MoreWings.Items.ModdedWings
             item.width = 22;
             item.height = 22;
             item.value = Item.sellPrice(0, 3, 40, 0);
-            item.rare = -12;
+            item.expert = true;
             item.accessory = true;
         }
         public override void UpdateAccessory(Player player, bool hideVisual)
@@ -39,8 +39,8 @@ namespace MoreWings.Items.ModdedWings
             ascentWhenFalling = 0.50f;
             ascentWhenRising = 0.15f;
             maxCanAscendMultiplier = 1f;
-            maxAscentMultiplier = 1.5f;
-            constantAscend = 0.1f;
+            maxAscentMultiplier = 1.2f;
+            constantAscend = 0.08f;
         }
 
         public override void HorizontalWingSpeeds(Player player, ref float speed, ref float acceleration)

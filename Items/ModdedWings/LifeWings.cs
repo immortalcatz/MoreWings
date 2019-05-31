@@ -12,7 +12,7 @@ namespace MoreWings.Items.ModdedWings
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Wings of Life");
-            Tooltip.SetDefault("Flight time: 160\nHorizontal speed: 6.5\nAcceleration: 1.75\nIncreases max life by +20\nIncreases life regeneration by +2 when flying");
+            Tooltip.SetDefault("Flight time: 160\nHorizontal speed: 6.5\nAcceleration: 1.75\nGood vertical speed\nIncreases max life by +20\nIncreases life regeneration by +2 when flying");
         }
 
         public override void SetDefaults()

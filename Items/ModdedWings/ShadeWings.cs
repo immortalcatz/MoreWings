@@ -12,7 +12,7 @@ namespace MoreWings.Items.ModdedWings
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Ebonian Soul");
-            Tooltip.SetDefault("Flight time: 30\nHorizontal speed: 5\nAcceleration: 0.8\n5% damage reduction\nIt's radiating with the power of the corruption\nExpert");
+            Tooltip.SetDefault("Flight time: 30\nHorizontal speed: 5\nAcceleration: 0.8\nBad vertical speed\n5% damage reduction\nIt's radiating with the power of the corruption");
             Main.RegisterItemAnimation(item.type, new DrawAnimationVertical(5, 4));
             ItemID.Sets.AnimatesAsSoul[item.type] = true;
             ItemID.Sets.ItemNoGravity[item.type] = true;
@@ -23,8 +23,8 @@ namespace MoreWings.Items.ModdedWings
         {
             item.width = 22;
             item.height = 20;
+            item.expert = true;
             item.value = Item.sellPrice(0, 3, 40, 0);
-            item.rare = -12;
             item.accessory = true;
         }
 
@@ -42,8 +42,8 @@ namespace MoreWings.Items.ModdedWings
             ascentWhenFalling = 0.50f;
             ascentWhenRising = 0.15f;
             maxCanAscendMultiplier = 1f;
-            maxAscentMultiplier = 1.5f;
-            constantAscend = 0.1f;
+            maxAscentMultiplier = 1.2f;
+            constantAscend = 0.08f;
         }
 
         public override void HorizontalWingSpeeds(Player player, ref float speed, ref float acceleration)
@@ -59,8 +59,8 @@ namespace MoreWings.Items.ModdedWings
             recipe.AddIngredient(ItemID.ShadowScale, 20);
             recipe.AddIngredient(ItemID.Feather, 7);
             recipe.AddIngredient(mod.ItemType("ConcentratedGel"), 1);
+            recipe.AddIngredient(3224, 1);
             recipe.AddTile(null, "SunplateAnvil");
-            recipe.AddTile(305);
             recipe.SetResult(this);
             recipe.AddRecipe();
         }

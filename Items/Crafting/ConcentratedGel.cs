@@ -2,7 +2,7 @@ using Terraria.ModLoader;
 using Terraria;
 using Terraria.ID;
 
-namespace MoreWings.Items
+namespace MoreWings.Items.Crafting
 {
     public class ConcentratedGel : ModItem
     {

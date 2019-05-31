@@ -27,7 +27,7 @@ namespace MoreWings.Tiles
             soundType = 21;
             soundStyle = 1;
             mineResist = 1f;
-            minPick = 55;
+            minPick = 60;
         }
     }
 }

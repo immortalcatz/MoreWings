@@ -7,7 +7,7 @@ namespace MoreWings.Items.Tiles
 	{
 		public override void SetStaticDefaults()
 		{
-			Tooltip.SetDefault("Used to craft powerful wings");
+			Tooltip.SetDefault("Used to craft powerful wings\nStill acts as a normal anvil");
 		}
 
 		public override void SetDefaults()
