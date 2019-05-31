@@ -1,6 +1,8 @@
+using Microsoft.Xna.Framework;
 using Terraria;
-using Terraria.ModLoader;
+using Terraria.DataStructures;
 using Terraria.ID;
+using Terraria.ModLoader;
 
 namespace MoreWings.Items.ModdedWings
 {
@@ -24,6 +26,8 @@ namespace MoreWings.Items.ModdedWings
 		public override void UpdateAccessory(Player player, bool hideVisual)
 		{
 			player.wingTimeMax = 45;
+            if (player.velocity.Y < player.oldVelocity.Y && player.wingFrame != 0)
+                Dust.NewDust(player.position + new Vector2(-player.direction * 18, -10), player.width, player.height, 158, 0f, 10f, 150, default(Color), 1.5f);
         }
 
 		public override void VerticalWingSpeeds(Player player, ref float ascentWhenFalling, ref float ascentWhenRising,

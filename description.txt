@@ -32,4 +32,9 @@ v0.6.2
 - Rebalanced and resprited demonic waders
 v0.6.3
 - Added somethings to Crimtane & Ebonian souls
+v.0.7
+- Rebalanced all wings (Again)
+- Added Wings of Life
+- Added Pink Quartz (Currently, you have to make a new world to get this ore)
+- Added dust to most wings
 

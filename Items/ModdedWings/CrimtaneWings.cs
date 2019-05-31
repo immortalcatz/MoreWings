@@ -30,7 +30,7 @@ namespace MoreWings.Items.ModdedWings
         {
             player.wingTimeMax = 34;
             if (player.velocity.Y < player.oldVelocity.Y && player.wingFrame != 0 && Main.rand.Next(3) == 0)
-                Dust.NewDust(player.position, player.width, player.height, mod.DustType("Blood"));
+                Dust.NewDust(player.position + new Vector2(-player.direction * 18, 0), player.width, player.height, mod.DustType("Blood"));
             player.brainOfConfusion = true;
         }
         public override void VerticalWingSpeeds(Player player, ref float ascentWhenFalling, ref float ascentWhenRising,

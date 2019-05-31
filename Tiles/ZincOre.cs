@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 
 namespace MoreWings.Tiles
 {
-    public class PinkQuartz : ModTile
+    public class ZincOre : ModTile
     {
         public override void SetDefaults()
         {
@@ -19,15 +19,15 @@ namespace MoreWings.Tiles
             Main.tileBlockLight[Type] = true;
 
             ModTranslation name = CreateMapEntryName();
-            name.SetDefault("Pink Quartz");
+            name.SetDefault("Zinc Ore");
             AddMapEntry(new Color(152, 171, 198), name);
 
-            dustType = 72;
-            drop = mod.ItemType("PinkQuartz");
+            dustType = 53;
+            drop = mod.ItemType("ZincOre");
             soundType = 21;
             soundStyle = 1;
-            mineResist = 4f;
-            minPick = 200;
+            mineResist = 1f;
+            minPick = 55;
         }
     }
 }

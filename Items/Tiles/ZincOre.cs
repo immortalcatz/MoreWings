@@ -6,7 +6,7 @@ using Terraria.ModLoader;
 
 namespace MoreWings.Items.Tiles
 {
-    public class PinkQuartz : ModItem
+    public class ZincOre : ModItem
     {
         public override void SetStaticDefaults()
         {
@@ -21,11 +21,11 @@ namespace MoreWings.Items.Tiles
             item.autoReuse = true;
             item.maxStack = 999;
             item.consumable = true;
-            item.createTile = mod.TileType("PinkQuartz");
+            item.createTile = mod.TileType("ZincOre");
             item.width = 12;
             item.height = 12;
-            item.value = Item.sellPrice(0, 0, 20, 0);
-            item.rare = 5;
+            item.value = Item.sellPrice(0, 0, 4, 0);
+            item.rare = 0;
         }
     }
 }

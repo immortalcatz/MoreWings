@@ -31,6 +31,8 @@ namespace MoreWings.Items.ModdedWings
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             player.wingTimeMax = 30;
+            if (player.velocity.Y < player.oldVelocity.Y && player.wingFrame != 0 && Main.rand.Next(3) == 0)
+                Dust.NewDust(player.position + new Vector2(-player.direction * 18, 0), player.width, player.height, mod.DustType("Shade"));
             player.endurance += 0.05f;
         }
 
