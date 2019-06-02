@@ -52,10 +52,10 @@ namespace MoreWings.Items.ModdedWings
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
+            recipe.AddIngredient(mod.ItemType("CoreofFlight"), 1);
             recipe.AddIngredient(ItemID.CrimtaneBar, 10);
             recipe.AddIngredient(ItemID.TissueSample, 20);
             recipe.AddIngredient(ItemID.Feather, 7);
-            recipe.AddIngredient(mod.ItemType("ConcentratedGel"), 1);
             recipe.AddIngredient(3223, 1);
             recipe.AddTile(null, "SunplateAnvil");
             recipe.SetResult(this);

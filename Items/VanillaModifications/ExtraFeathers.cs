@@ -14,7 +14,7 @@ namespace MoreWings.Items
             {
                 if (npc.type == NPCID.Bird)
                 {
-                    if (Main.rand.NextFloat() < .10f)
+                    if (Main.rand.NextFloat() < .20f)
                         Item.NewItem(npc.getRect(), ItemID.Feather, 1 + Main.rand.Next(1));
                 }
             }

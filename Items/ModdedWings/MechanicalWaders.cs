@@ -10,7 +10,7 @@ namespace MoreWings.Items.ModdedWings
 		public override void SetStaticDefaults()
 		{
             DisplayName.SetDefault("Demonic Waders");
-            Tooltip.SetDefault("Counts as wings\nFlight time: 100\nHorizontal speed: 8\nAcceleration: 1.2\nAllows flight, super fast running and extra mobility on ice");     
+            Tooltip.SetDefault("Counts as wings\nFlight time: 130\nHorizontal speed: 8\nAcceleration: 1.2\nAllows flight, super fast running and extra mobility on ice");     
 		}
 
 		public override void SetDefaults()

@@ -9,7 +9,7 @@ namespace MoreWings.Items.Tools
 	{
 		public override void SetStaticDefaults()
 		{
-			Tooltip.SetDefault("Can be used to mine Zinc");
+			Tooltip.SetDefault("Able to mine Zinc");
 		}
 
 		public override void SetDefaults()
@@ -27,7 +27,8 @@ namespace MoreWings.Items.Tools
 			item.rare = 1;
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = true;
-		}
+            item.value = Item.sellPrice(0, 2, 60, 0);
+        }
 
 		public override void AddRecipes()
 		{

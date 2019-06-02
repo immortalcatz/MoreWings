@@ -7,7 +7,7 @@ using Terraria.ModLoader;
 namespace MoreWings.Items.ModdedWings
 {
 	[AutoloadEquip(EquipType.Wings)]
-	public class MeteoriteBooster : ModItem
+	public class HellWings : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
@@ -27,7 +27,7 @@ namespace MoreWings.Items.ModdedWings
 		{
 			player.wingTimeMax = 45;
             if (player.velocity.Y < player.oldVelocity.Y && player.wingFrame != 0)
-                Dust.NewDust(player.position + new Vector2(-player.direction * 18, -10), player.width, player.height, 158, 0f, 10f, 150, default(Color), 1.5f);
+                Dust.NewDust(player.position + new Vector2(-player.direction * 18, 0), player.width, player.height, 6, 0f, 10f, 150, default(Color), 1.5f);
         }
 
 		public override void VerticalWingSpeeds(Player player, ref float ascentWhenFalling, ref float ascentWhenRising,
@@ -49,10 +49,10 @@ namespace MoreWings.Items.ModdedWings
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.MeteoriteBar, 20);
+            recipe.AddIngredient(mod.ItemType("CoreofFlight"), 1);
+            recipe.AddIngredient(ItemID.HellstoneBar, 20);
             recipe.AddIngredient(ItemID.Bone, 60);            
             recipe.AddIngredient(ItemID.Feather, 10);
-            recipe.AddIngredient(mod.ItemType("ConcentratedGel"), 2);
             recipe.AddTile(null, "SunplateAnvil");
             recipe.SetResult(this);
 			recipe.AddRecipe();

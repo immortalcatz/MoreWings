@@ -44,4 +44,8 @@ v.0.7.2
 - Fixed loads of bugs (probably added more)
 - Added Eye Crusher
 - Made Zinc ore post EoC
+v.0.7.3
+- Added Core of Flight
+- Added recipes for Lucky Horseshoe and the Cloud in a Bottle
+- Changed Meteorite Booster for Hell Wings
 

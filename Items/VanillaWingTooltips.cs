@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class BoneWings : GlobalItem
     {
@@ -14,13 +14,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.BoneWings)
                 {
-                    tooltipLine.text = "Flight time: 140\nHorizontal speed: 7\nAcceleration: 1";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 140\nHorizontal speed: 7\nAcceleration: 1";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class BetsyWings : GlobalItem
     {
@@ -30,13 +30,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.BetsyWings)
                 {
-                    tooltipLine.text = "Flight time: 150\nHorizontal speed: 6\nAcceleration: 2.5";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 150\nHorizontal speed: 6\nAcceleration: 2.5";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class AngelWings : GlobalItem
     {
@@ -46,13 +46,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.AngelWings)
                 {
-                    tooltipLine.text = "Flight time: 100\nHorizontal speed: 6.25\nAcceleration: 1";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 100\nHorizontal speed: 6.25\nAcceleration: 1";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class ArkhalisWings : GlobalItem
     {
@@ -62,7 +62,7 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.ArkhalisWings)
                 {
-                    tooltipLine.text = "Flight time: 150\nHorizontal speed: 7\nAcceleration: 1";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 150\nHorizontal speed: 7\nAcceleration: 1";
                 }
             }
         }
@@ -78,13 +78,13 @@ namespace MoreWings.Items
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.BatWings)
                 {
-                    tooltipLine.text = "Flight time: 130\nHorizontal speed: 0\nAcceleration: 0";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 130\nHorizontal speed: 0\nAcceleration: 0";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class BeetleWings : GlobalItem
     {
@@ -94,13 +94,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.BeetleWings)
                 {
-                    tooltipLine.text = "Flight time: 160\nHorizontal speed: 7.5\nAcceleration: 1";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 160\nHorizontal speed: 7.5\nAcceleration: 1";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class BeeWings : GlobalItem
     {
@@ -110,13 +110,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.BeeWings)
                 {
-                    tooltipLine.text = "Flight time: 130\nHorizontal speed: 6.75\nAcceleration: 1";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 130\nHorizontal speed: 6.75\nAcceleration: 1";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class BejeweledValkyrieWing : GlobalItem
     {
@@ -126,13 +126,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.BejeweledValkyrieWing)
                 {
-                    tooltipLine.text = "Flight time: 150\nHorizontal speed: 7\nAcceleration: 1";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 150\nHorizontal speed: 7\nAcceleration: 1";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class ButterflyWings : GlobalItem
     {
@@ -142,13 +142,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.ButterflyWings)
                 {
-                    tooltipLine.text = "Flight time: 130\nHorizontal speed: 6.75\nAcceleration: 1";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 130\nHorizontal speed: 6.75\nAcceleration: 1";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class CenxsWings : GlobalItem
     {
@@ -158,13 +158,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.CenxsWings)
                 {
-                    tooltipLine.text = "Flight time: 150\nHorizontal speed: 7\nAcceleration: 1";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 150\nHorizontal speed: 7\nAcceleration: 1";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class CrownosWings : GlobalItem
     {
@@ -174,13 +174,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.CrownosWings)
                 {
-                    tooltipLine.text = "Flight time: 150\nHorizontal speed: 7\nAcceleration: 1";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 150\nHorizontal speed: 7\nAcceleration: 1";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class DemonWings : GlobalItem
     {
@@ -190,13 +190,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.DemonWings)
                 {
-                    tooltipLine.text = "Flight time: 100\nHorizontal speed: 6.25\nAcceleration: 1";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 100\nHorizontal speed: 6.25\nAcceleration: 1";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class DTownsWings : GlobalItem
     {
@@ -206,13 +206,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.DTownsWings)
                 {
-                    tooltipLine.text = "Flight time: 150\nHorizontal speed: 7\nAcceleration: 1";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 150\nHorizontal speed: 7\nAcceleration: 1";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class FairyWings : GlobalItem
     {
@@ -222,13 +222,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.FairyWings)
                 {
-                    tooltipLine.text = "Flight time: 130\nHorizontal speed: 6.75\nAcceleration: 1";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 130\nHorizontal speed: 6.75\nAcceleration: 1";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class FestiveWings : GlobalItem
     {
@@ -238,13 +238,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.FestiveWings)
                 {
-                    tooltipLine.text = "Flight time: 170\nHorizontal speed: 7.5\nAcceleration: 1";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 170\nHorizontal speed: 7.5\nAcceleration: 1";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class FinWings : GlobalItem
     {
@@ -254,13 +254,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.FinWings)
                 {
-                    tooltipLine.text = "Flight time: 100\nHorizontal speed: 0\nAcceleration: 0";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 100\nHorizontal speed: 0\nAcceleration: 0";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class FishronWings : GlobalItem
     {
@@ -270,13 +270,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.FishronWings)
                 {
-                    tooltipLine.text = "Flight time: 180\nHorizontal speed: 8\nAcceleration: 2";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 180\nHorizontal speed: 8\nAcceleration: 2";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class FlameWings : GlobalItem
     {
@@ -286,13 +286,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.FlameWings)
                 {
-                    tooltipLine.text = "Flight time: 160\nHorizontal speed: 7.5\nAcceleration: 1";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 160\nHorizontal speed: 7.5\nAcceleration: 1";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class FrozenWings : GlobalItem
     {
@@ -302,13 +302,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.FrozenWings)
                 {
-                    tooltipLine.text = "Flight time: 160\nHorizontal speed: 7.5\nAcceleration: 1";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 160\nHorizontal speed: 7.5\nAcceleration: 1";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class GhostWings : GlobalItem
     {
@@ -318,13 +318,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.GhostWings)
                 {
-                    tooltipLine.text = "Flight time: 160\nHorizontal speed: 7.5\nAcceleration: 1";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 160\nHorizontal speed: 7.5\nAcceleration: 1";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class HarpyWings : GlobalItem
     {
@@ -334,13 +334,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.HarpyWings)
                 {
-                    tooltipLine.text = "Flight time: 140\nHorizontal speed: 7\nAcceleration: 1";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 140\nHorizontal speed: 7\nAcceleration: 1";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class Hoverboard : GlobalItem
     {
@@ -350,13 +350,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.Hoverboard)
                 {
-                    tooltipLine.text = "Flight time: 170\nHorizontal speed: 6.25\nAcceleration: 1";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 170\nHorizontal speed: 6.25\nAcceleration: 1";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class Jetpack : GlobalItem
     {
@@ -366,13 +366,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.Jetpack)
                 {
-                    tooltipLine.text = "Flight time: 115\nHorizontal speed: 6.5\nAcceleration: 1";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 115\nHorizontal speed: 6.5\nAcceleration: 1";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class JimsWings : GlobalItem
     {
@@ -382,13 +382,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.JimsWings)
                 {
-                    tooltipLine.text = "Flight time: 150\nHorizontal speed: 7\nAcceleration: 1";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 150\nHorizontal speed: 7\nAcceleration: 1";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class LeafWings : GlobalItem
     {
@@ -398,13 +398,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.LeafWings)
                 {
-                    tooltipLine.text = "Flight time: 160\nHorizontal speed: 6.75\nAcceleration: 1";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 160\nHorizontal speed: 6.75\nAcceleration: 1";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class LeinforsWings : GlobalItem
     {
@@ -414,13 +414,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.LeinforsWings)
                 {
-                    tooltipLine.text = "Flight time: 150\nHorizontal speed: 7\nAcceleration: 1";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 150\nHorizontal speed: 7\nAcceleration: 1";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class LokisWings : GlobalItem
     {
@@ -430,13 +430,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.LokisWings)
                 {
-                    tooltipLine.text = "Flight time: 150\nHorizontal speed: 7\nAcceleration: 1";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 150\nHorizontal speed: 7\nAcceleration: 1";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class MothronWings : GlobalItem
     {
@@ -446,13 +446,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.MothronWings)
                 {
-                    tooltipLine.text = "Flight time: 160\nHorizontal speed: 0\nAcceleration: 0";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 160\nHorizontal speed: 0\nAcceleration: 0";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class RedsWings : GlobalItem
     {
@@ -462,13 +462,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.RedsWings)
                 {
-                    tooltipLine.text = "Flight time: 150\nHorizontal speed: 7\nAcceleration: 1";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 150\nHorizontal speed: 7\nAcceleration: 1";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class SkiphsWings : GlobalItem
     {
@@ -478,13 +478,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.SkiphsWings)
                 {
-                    tooltipLine.text = "Flight time: 150\nHorizontal speed: 7\nAcceleration: 1";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 150\nHorizontal speed: 7\nAcceleration: 1";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class SpookyWings : GlobalItem
     {
@@ -494,14 +494,14 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.SpookyWings)
                 {
-                    tooltipLine.text = "Flight time: 180\nHorizontal speed: 7.5\nAcceleration: 1";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 180\nHorizontal speed: 7.5\nAcceleration: 1";
                 }
             }
         }
     }
 }
 
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class SteampunkWings : GlobalItem
     {
@@ -511,13 +511,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.SteampunkWings)
                 {
-                    tooltipLine.text = "Flight time: 180\nHorizontal speed: 7.75\nAcceleration: 1";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 180\nHorizontal speed: 7.75\nAcceleration: 1";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class TatteredFairyWings : GlobalItem
     {
@@ -527,13 +527,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.TatteredFairyWings)
                 {
-                    tooltipLine.text = "Flight time: 180\nHorizontal speed: 7.5\nAcceleration: 1";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 180\nHorizontal speed: 7.5\nAcceleration: 1";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class WillsWings : GlobalItem
     {
@@ -543,13 +543,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.WillsWings)
                 {
-                    tooltipLine.text = "Flight time: 150\nHorizontal speed: 7\nAcceleration: 1";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 150\nHorizontal speed: 7\nAcceleration: 1";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class WingsNebula : GlobalItem
     {
@@ -559,13 +559,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.WingsNebula)
                 {
-                    tooltipLine.text = "Flight time: 160\nHorizontal speed: 6.5\nAcceleration: 1.5";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 160\nHorizontal speed: 6.5\nAcceleration: 1.5";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class WingsSolar : GlobalItem
     {
@@ -575,13 +575,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.WingsSolar)
                 {
-                    tooltipLine.text = "Flight time: 180\nHorizontal speed: 9\nAcceleration: 2.5";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 180\nHorizontal speed: 9\nAcceleration: 2.5";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class WingsStardust : GlobalItem
     {
@@ -591,14 +591,14 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.WingsStardust)
                 {
-                    tooltipLine.text = "Flight time: 180\nHorizontal speed: 9\nAcceleration: 2.5";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 180\nHorizontal speed: 9\nAcceleration: 2.5";
                 }
             }
         }
     }
 }
 
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class WingsVortex : GlobalItem
     {
@@ -608,13 +608,13 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.WingsVortex)
                 {
-                    tooltipLine.text = "Flight time: 160\nHorizontal speed: 6.5\nAcceleration: 1.5";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 160\nHorizontal speed: 6.5\nAcceleration: 1.5";
                 }
             }
         }
     }
 }
-namespace MoreWings.Items.VanillaWings
+namespace MoreWings.Items
 {
     public class Yoraiz0rWings : GlobalItem
     {
@@ -624,7 +624,7 @@ namespace MoreWings.Items.VanillaWings
             {
                 if (tooltipLine.mod == "Terraria" && tooltipLine.Name == "Tooltip0" && item.type == ItemID.Yoraiz0rWings)
                 {
-                    tooltipLine.text = "Flight time: 150\nHorizontal speed: 7\nAcceleration: 1";
+                    tooltipLine.text = "Allows flight and slow fall\nFlight time: 150\nHorizontal speed: 7\nAcceleration: 1";
                 }
             }
         }
